@@ -21,6 +21,8 @@
 		9AAF9B4018D5B7D5004D93DD /* ASegmentViewControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF9B3F18D5B7D5004D93DD /* ASegmentViewControllerDemoTests.m */; };
 		9AAF9B4C18D5B84F004D93DD /* ASegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF9B4B18D5B84F004D93DD /* ASegmentViewController.m */; };
 		9AAF9B4F18D5C7A1004D93DD /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF9B4E18D5C7A1004D93DD /* DemoViewController.m */; };
+		9ADAC36818D77EEE004E90DE /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC36718D77EEE004E90DE /* TestTableViewController.m */; };
+		9ADAC36B18D78A92004E90DE /* ANavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAC36A18D78A92004E90DE /* ANavViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		9AAF9B4B18D5B84F004D93DD /* ASegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASegmentViewController.m; sourceTree = "<group>"; };
 		9AAF9B4D18D5C7A1004D93DD /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		9AAF9B4E18D5C7A1004D93DD /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		9ADAC36618D77EEE004E90DE /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		9ADAC36718D77EEE004E90DE /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		9ADAC36918D78A92004E90DE /* ANavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANavViewController.h; sourceTree = "<group>"; };
+		9ADAC36A18D78A92004E90DE /* ANavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 				9AAF9B2118D5B7D5004D93DD /* Supporting Files */,
 				9AAF9B4D18D5C7A1004D93DD /* DemoViewController.h */,
 				9AAF9B4E18D5C7A1004D93DD /* DemoViewController.m */,
+				9ADAC36618D77EEE004E90DE /* TestTableViewController.h */,
+				9ADAC36718D77EEE004E90DE /* TestTableViewController.m */,
+				9ADAC36918D78A92004E90DE /* ANavViewController.h */,
+				9ADAC36A18D78A92004E90DE /* ANavViewController.m */,
 			);
 			path = ASegmentViewControllerDemo;
 			sourceTree = "<group>";
@@ -257,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADAC36B18D78A92004E90DE /* ANavViewController.m in Sources */,
 				9AAF9B4C18D5B84F004D93DD /* ASegmentViewController.m in Sources */,
 				9AAF9B2B18D5B7D5004D93DD /* AppDelegate.m in Sources */,
+				9ADAC36818D77EEE004E90DE /* TestTableViewController.m in Sources */,
 				9AAF9B2718D5B7D5004D93DD /* main.m in Sources */,
 				9AAF9B4F18D5C7A1004D93DD /* DemoViewController.m in Sources */,
 			);

@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "ASegmentViewController.h"
 #import "DemoViewController.h"
+#import "TestTableViewController.h"
+#import "ANavViewController.h"
 
 @implementation AppDelegate
 
@@ -24,14 +26,22 @@
     UIViewController *randomViewController2 = [[DemoViewController alloc] init];
     [randomViewController2.view setBackgroundColor:[UIColor blueColor]];
     
-    UIViewController *randomViewController3 = [[UIViewController alloc] init];
+    UITableViewController *randomViewController3 = [[UITableViewController alloc] init];
     [randomViewController3.view setBackgroundColor:[UIColor whiteColor]];
+    randomViewController3.automaticallyAdjustsScrollViewInsets = NO;
+    ((UIScrollView *)randomViewController3.view).contentOffset = CGPointZero;
     
-    NSArray *randomViewControllers = [[NSArray alloc] initWithObjects:randomViewController1,randomViewController2, randomViewController3, nil];
-    NSArray *randomItems = [[NSArray alloc] initWithObjects:@"FirstViewC", @"secondVC", @"thirdViewC", nil];
+//    TestTableViewController
+    TestTableViewController *randomViewController4 = [[TestTableViewController alloc] init];
+    [randomViewController4.view setBackgroundColor:[UIColor whiteColor]];
+    randomViewController4.automaticallyAdjustsScrollViewInsets = NO;
+    ((UIScrollView *)randomViewController4.view).contentOffset = CGPointZero;
+    
+    NSArray *randomViewControllers = [[NSArray alloc] initWithObjects:randomViewController1,randomViewController2, randomViewController3, randomViewController4, nil];
+    NSArray *randomItems = [[NSArray alloc] initWithObjects:@"FirstViewC", @"secondVC", @"thirdViewC", @"fourth", nil];
     ASegmentViewController *aSegmentViewController = [[ASegmentViewController alloc] initWithItems:randomItems forControllers:randomViewControllers];
     
-    UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:aSegmentViewController];
+    UINavigationController *navC = [[ANavViewController alloc] initWithRootViewController:aSegmentViewController];
     
 	self.window.rootViewController = navC;
     
